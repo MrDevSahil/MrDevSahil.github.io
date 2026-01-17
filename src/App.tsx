@@ -1,6 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, Projects } from "./pages";
-import { KodeVanaV1, KodeVanaV2 } from "./projects";
+import {
+  KodeVanaV1,
+  KodeVanaV2,
+  // KodeVanaV3,
+} from "./projects";
 
 export default function App() {
   return (
@@ -13,6 +17,10 @@ export default function App() {
 
       {/* KodeVana Version 2.0.0 */}
       <Route path="/projects/kodevana-v2/*" element={<KodeVanaV2 />} />
+
+      {/* KodeVana Version 3.0.0
+      <Route path="/projects/kodevana-v3/*" element={<KodeVanaV3 />} />
+      */}
     </Routes>
   );
 }
