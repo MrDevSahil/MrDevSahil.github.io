@@ -1,0 +1,140 @@
+import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { Arrow_right, Facebook_logo, Instagram_logo, LinkedIn_logo, Twitter_logo } from '../assets';
+
+function Footer() {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  
+  return (
+    <div className="px-5 sm:px-10 py-7 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0 sm:gap-2 lg:grid-cols-6 bg-slate-900">
+
+      {/* Logo Section */}
+      <div className="col-span-2 md:mr-12 lg:mx-16">
+        <NavLink to="/projects/kodevana-v1">
+          <h1 className="md:mb-4 lg:mb-7 text-2xl sm:text-4xl font-bold text-yellow-400">
+            Kode<span className="text-slate-50">Vana</span>
+          </h1>
+        </NavLink>
+        <p className="font-medium text-base sm:text-lg xl:text-xl text-slate-50">Our Team, Kodevana, encapsulates our drive for innovation, quality, and a holistic approach to problem-solving. With us, you're not just a client; you're a partner on an exciting journey to create remarkable digital experiences.</p>
+      </div>
+
+      {/* Links Section */}
+      <div className="mt-2 md:mt-0">
+        <h3 className="md:mb-4 lg:mb-7 text-xl xs:text-2xl sm:text-3xl font-bold text-yellow-400">Links</h3>
+        <div className="text-base xs:text-lg sm:text-xl text-white font-semibold">
+          <NavLink className="hover:text-yellow-400" to="/projects/kodevana-v1">
+            <p className="hover:translate-x-1 transition duration-300 py-1 lg:py-1.5 mb-1">
+              Home
+            </p>
+          </NavLink>
+          <NavLink className="hover:text-yellow-400" to="/projects/kodevana-v1/blog">
+            <p className="hover:translate-x-1 transition duration-300 py-1 lg:py-1.5 mb-1">
+              Blogs
+            </p>
+          </NavLink>
+          <NavLink className="hover:text-yellow-400" to="/projects/kodevana-v1/project">
+            <p className="hover:translate-x-1 transition duration-300 py-1 lg:py-1.5 mb-1">
+              Projects
+            </p>
+          </NavLink>
+          <NavLink className="hover:text-yellow-400" to="/projects/kodevana-v1/about">
+            <p className="hover:translate-x-1 transition duration-300 py-1 lg:py-1.5 mb-1">
+              About us
+            </p>
+          </NavLink>
+        </div>
+      </div>
+
+      {/* Service Section */}
+      <div className="mt-2 md:mt-0">
+        <h3 className="md:mb-4 lg:mb-7 text-xl xs:text-2xl sm:text-3xl font-bold text-yellow-400">Services</h3>
+        <div className="cursor-default">
+          <p className="md:mb-1 lg:mb-3 text-base xs:text-lg sm:text-xl text-white font-semibold">&rarr; Web development</p>
+          <p className="md:mb-1 lg:mb-3 text-base xs:text-lg sm:text-xl text-white font-semibold">&rarr; App development</p>
+          <p className="md:mb-1 lg:mb-3 text-base xs:text-lg sm:text-xl text-white font-semibold">&rarr; UI & UX Design</p>
+        </div>
+      </div>
+
+      {/* Contact Section */}
+      <div className="mt-2 md:mt-7 lg:mt-0 text-base xs:text-lg sm:text-xl text-white col-span-2 md:col-span-4 lg:col-span-2">
+        <h3 className="md:mb-4 lg:mb-7 text-xl xs:text-2xl sm:text-3xl font-bold text-yellow-400">Contacts</h3>
+        <p className="mb-2 sm:mb-3">Drop your mail ID and our team will reach you shortly</p>
+        <div className="mb-2 sm:mb-3 flex">
+         <input
+          className="h-7 sm:h-10 md:h-10 lg:h-10 xl:h-10 px-4 py-2 w-full sm:w-3/4 md:w-2/3 lg:w-3/4 xl:w-3/4 font-semibold text-slate-600 outline-none rounded-l-md"
+          type="email"
+          placeholder="Enter your mail ID"
+          value={email}
+          onChange={handleEmailChange}
+        />
+        <button type="submit">
+          <img
+            className="h-7 sm:h-10 md:h-10 lg:h-10 xl:h-10 px-2 py-1 bg-slate-500 rounded-r-md"
+            src={Arrow_right}
+            alt="Arrow Graphics"
+          />
+        </button>
+        </div>
+        <p className="mb-2 sm:mb-3">
+          Or you can contact via mail :
+          <a className='text-yellow-300' href="mailto:contact.kodevana@gmail.com">
+            {'\u00a0'}contact.kodevana@gmail.com
+          </a>
+        </p>
+        <p className="mb-2 sm:mb-3">
+          +91 9365646114 <span className="text-yellow-400">{'\u00a0'}{'\u00a0'}|{'\u00a0'}{'\u00a0'}</span>
+          +91 7002436557
+        </p>
+        <div className="sm:flex">
+          <p className="text-yellow-400">Connect with us :</p>
+
+          <a href="https://www.facebook.com/profile.php?id=100089674457660&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+            <button className="ml-5">
+              <img
+                className="w-8 h-8"
+                src={Facebook_logo}
+                alt="Facebook logo"
+              />
+            </button>
+          </a>
+
+          <a href="https://www.instagram.com/kodevana/" target="_blank" rel="noopener noreferrer">
+            <button className="ml-5">
+              <img
+                className="w-8 h-8"
+                src={Instagram_logo}
+                alt="Instagram logo"
+              />
+            </button>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kodevana/" target="_blank" rel="noopener noreferrer">
+            <button className="ml-5">
+              <img
+                className="w-8 h-8"
+                src={LinkedIn_logo}
+                alt="Linkedin logo"
+              />
+            </button>
+          </a>
+
+          <a href="https://www.twitter.com/kodevana/" target="_blank" rel="noopener noreferrer">
+            <button className="ml-5">
+              <img
+                className="w-8 h-8"
+                src={Twitter_logo}
+                alt="Twitter logo"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Footer
