@@ -2,42 +2,54 @@ import Call from "@mui/icons-material/Call";
 import Email from "@mui/icons-material/Email";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
+import { Profile } from "../assets";
 
 function About() {
   return (
     <div className="flex flex-col gap-14 h-screen w-screen justify-center content-center items-center">
       <div className="flex gap-16 px-40">
         <div className="w-full text-center justify-center content-center bg-primary">
-          <h2 className="text-7xl font-black text-white -translate-y-3">
+          <h2 className="text-7xl font-black text-white -translate-y-2.5">
             About Me
           </h2>
-          <div className="h-96 w-96"></div>
+          <div className="w-full">
+            <img
+              src={Profile}
+              alt="GIF"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-3">
           <h2 className="text-5xl font-black">Hello!</h2>
           <p className="text-wrap">
-            I'm a passionate and detail-oriented software developer with a
-            strong background in building full-stack applications, primarily
-            focused on mobile app development using React Native, Node.js, and
-            MongoDB. Over the years, I’ve taken several projects from concept to
-            production, including Chatly—an AI-powered communication app with
-            image cartoonization, video calling, and expert consulting
-            features—and the official Android app for the BPF (Bodoland People’s
-            Front) party, which incorporates multi-level user roles, secure
-            video conferencing, media publishing, and donation support. I enjoy
-            designing scalable backend systems, crafting responsive user
-            interfaces, and solving real-world problems with technology. My
-            development approach is user-centric, with a strong emphasis on
-            functionality, security, and performance.
+            I’m a passionate full-stack software developer specializing in web
+            and mobile app development using{" "}
+            <b>Flutter, React Native, Node.js, MongoDB, and cloud platforms</b>.
+            I have hands-on experience taking products from concept to
+            production, with a strong focus on scalability, security, and
+            performance.
           </p>
           <p className="text-wrap">
-            In addition to my technical skills, I value collaboration,
-            continuous learning, and creative problem-solving. I’m comfortable
-            working across different layers of the tech stack and take
-            initiative in both team environments and solo projects. I'm
-            currently focused on deepening my expertise in AI integration,
-            system architecture, and scalable cloud services while contributing
-            to impactful projects that make a difference.
+            Previously, I worked as{" "}
+            <b>
+              Lead Software Developer at Recycle Bazzar (Saha Recycle Bazzar Pvt
+              Ltd)
+            </b>
+            , where I led the tech team and built a complete scrap collection
+            and waste management ecosystem. This included consumer and collector
+            Flutter apps with live tracking, navigation, and wallet-based
+            payments, along with a centralized Node.js backend, Next.js admin
+            panel, and cloud-hosted infrastructure using <b>Firebase and GCP</b>
+            .
+          </p>
+          <p className="text-wrap">
+            I’ve also developed production-ready applications such as{" "}
+            <b>Chatly</b>, an AI-powered communication platform, and the{" "}
+            <b>official Android app for the Bodoland People’s Front (BPF)</b>. I
+            enjoy solving real-world problems through technology and building
+            reliable, user-centric software systems.
           </p>
         </div>
       </div>
@@ -47,15 +59,20 @@ function About() {
           <div className="flex flex-col gap-3">
             <span className="flex gap-1">
               <Call />
-              <p>+91 9678532346</p>
+              <a
+                className="hover:text-primary hover:translate-x-1 transition-all duration-300"
+                href="tel:+91 7002436557"
+              >
+                +91 7002436557
+              </a>
             </span>
             <span className="flex gap-1">
               <Email />
               <a
                 className="hover:text-primary hover:translate-x-1 transition-all duration-300"
-                href="mailto:sahilswargiary.personal@gmail.com"
+                href="mailto:mrdevsahil@gmail.com"
               >
-                sahilswargiary.personal@gmail.com
+                mrdevsahil@gmail.com
               </a>
             </span>
             <span className="flex gap-1">
@@ -64,16 +81,16 @@ function About() {
                 className="hover:text-primary hover:translate-x-1 transition-all duration-300"
                 href="https://linkedin.com/in/sahilsway360"
               >
-                Sahilsway
+                Sahil
               </a>
             </span>
             <span className="flex gap-1">
               <GitHub />
               <a
                 className="hover:text-primary hover:translate-x-1 transition-all duration-300"
-                href="https://github.com/Sahilsway"
+                href="https://github.com/MrDevSahil"
               >
-                Sahilsway
+                MrDevSahil
               </a>
             </span>
           </div>
@@ -82,8 +99,9 @@ function About() {
           <h2 className="text-5xl font-black">Education</h2>
           <div className="flex flex-col gap-2">
             <p>Bachelor of Computer Application</p>
+            <p>CGPA: 7.65</p>
             <p>2020 - 2023</p>
-            <p>Rangia College</p>
+            <p>Rangia College, Rangia</p>
           </div>
         </div>
         <div className="flex flex-col gap-3">
@@ -92,8 +110,8 @@ function About() {
             <div className="flex flex-col gap-1 w-full">
               <p>English</p>
               <div className="flex w-full">
-                <span className="h-4 w-[90%] bg-primary" />
-                <span className="h-4 w-[10%] bg-black" />
+                <span className="h-4 w-[95%] bg-primary" />
+                <span className="h-4 w-[05%] bg-black" />
               </div>
             </div>
             <div className="flex flex-col gap-1 w-full">
@@ -113,8 +131,8 @@ function About() {
             <div className="flex flex-col gap-1 w-full">
               <p>Assamease</p>
               <div className="flex w-full">
-                <span className="h-4 w-[70%] bg-primary" />
-                <span className="h-4 w-[30%] bg-black" />
+                <span className="h-4 w-[80%] bg-primary" />
+                <span className="h-4 w-[20%] bg-black" />
               </div>
             </div>
           </div>

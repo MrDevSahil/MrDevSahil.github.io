@@ -1,8 +1,8 @@
 import { Hero, About } from "../components";
 
-function HomePage() {
+function Home() {
   return (
-    <div className="snap-y">
+    <div className="snap-y min-h-[98vh]">
       <div className="h-screen snap-center">
         <Hero />
       </div>
@@ -13,4 +13,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

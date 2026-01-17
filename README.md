@@ -1,3 +1,3 @@
-# I swear I'm learning to improve my REAME writing style ;)
+# React + TypeScript + Vite
 
-## This is my portfolio site developed using REACT + Typescript + Tailwindcss and (loading...)
+## My Portfolio
