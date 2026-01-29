@@ -4,6 +4,7 @@ import {
   KodeVanaV1,
   KodeVanaV2,
   // KodeVanaV3,
+  Travo,
 } from "./projects";
 
 export default function App() {
@@ -21,6 +22,9 @@ export default function App() {
       {/* KodeVana Version 3.0.0
       <Route path="/projects/kodevana-v3/*" element={<KodeVanaV3 />} />
       */}
+
+      {/* Travo */}
+      <Route path="/projects/travo/*" element={<Travo />} />
     </Routes>
   );
 }
