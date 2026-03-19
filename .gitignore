@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+node_modules/
 dist
 dist-ssr
 *.local
@@ -18,7 +18,7 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
-./package-lock.json
+package-lock.json
 
 # Logs
 logs

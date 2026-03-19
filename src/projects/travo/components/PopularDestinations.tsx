@@ -6,7 +6,7 @@ import { Beach, Mountain, Waterfal, Iceberg } from "../destinations";
 const PopularDestinations = () => {
   const [selectedCategory, setSelectedCategory] = useState("beach");
 
-  const handleChangeCategory = (category) => () => {
+  const handleChangeCategory = (category: string) => () => {
     setSelectedCategory(category);
   };
 
