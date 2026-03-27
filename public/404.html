@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>mrdevsahil</title>
+    <!--
+      GitHub Pages SPA redirect trick.
+      Any 404 on a deep link (e.g. /projects/super-app) gets redirected
+      back to index.html with the path encoded in the query string,
+      then the router in main.tsx picks it up.
+    -->
+    <script>
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+        l.pathname.split("/").slice(0, 1).join("/") +
+        "/?p=" + encodeURIComponent(l.pathname + l.search) +
+        (l.hash ? "&h=" + encodeURIComponent(l.hash) : "")
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
